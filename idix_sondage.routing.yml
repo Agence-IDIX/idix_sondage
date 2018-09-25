@@ -1,0 +1,6 @@
+idix_sondage.async_poll:
+  path: '/async/poll-recent'
+  defaults:
+    _controller: '\Drupal\idix_sondage\Controller\AjaxController::ajaxPollRecent'
+  requirements:
+    _permission: 'access polls'

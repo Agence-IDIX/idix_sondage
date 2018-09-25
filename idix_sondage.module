@@ -1,0 +1,18 @@
+<?php
+
+function idix_sondage_block_alter(array &$blocks){
+  if(isset($blocks['poll_recent_block'])){
+    $blocks['poll_recent_block']['class'] = 'Drupal\idix_sondage\Plugin\Block\PollRecentBlock';
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function idix_sondage_theme($existing, $type, $theme, $path) {
+  return [
+    'ajax_poll_recent' => [
+      'render element' => 'children',
+    ]
+  ];
+}

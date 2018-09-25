@@ -1,0 +1,7 @@
+name: IDIX Sondage
+description: 'Système de gestion des sondages (poll) IDIX.'
+core: 8.x
+package: IDIX
+type: module
+dependencies:
+  - poll
